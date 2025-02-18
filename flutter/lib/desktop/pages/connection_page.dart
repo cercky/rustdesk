@@ -84,14 +84,15 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('', style: TextStyle(fontSize: em)),
+                Text(', ', style: TextStyle(fontSize: em)),  
                 Flexible(
                   child: InkWell(
+                    onTap: onUsePublicServerGuide,
                     child: Row(
                       children: [
                         Flexible(
                           child: Text(
-                            translate(''),
+                            translate('setup_server_tip'),
                             style: TextStyle(
                                 decoration: TextDecoration.underline,
                                 fontSize: em),
@@ -130,7 +131,7 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
             if (!isIncomingOnly) startServiceWidget(),
             // ready && public
             // No need to show the guide if is custom client.
-            if (!isIncomingOnly) setupServerWidget(),
+            //if (!isIncomingOnly) setupServerWidget(),
           ],
         );
 

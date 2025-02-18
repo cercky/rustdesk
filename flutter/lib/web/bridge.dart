@@ -851,7 +851,7 @@ class RustdeskImpl {
   Future<bool> mainIsUsingPublicServer({dynamic hint}) {
     return Future(() =>
         js.context.callMethod('getByName', ["is_using_public_server"]) ==
-        'true');
+        'false');
   }
 
   Future<void> mainDiscover({dynamic hint}) {

@@ -85,27 +85,27 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
                 _svcIsUsingPublicServer.value),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text('', style: TextStyle(fontSize: em)),
-                Flexible(
-                  child: InkWell(
-                    onTap: onUsePublicServerGuide,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          child: Text(
-                            translate(''),
-                            style: TextStyle(
-                                decoration: TextDecoration.underline,
-                                fontSize: em),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                )
-              ],
-            ),
+//              children: [
+//                Text('', style: TextStyle(fontSize: em)),
+//                Flexible(
+//                  child: InkWell(
+//                    onTap: onUsePublicServerGuide,
+//                    child: Row(
+//                      children: [
+//                        Flexible(
+//                          child: Text(
+//                            translate(''),
+//                            style: TextStyle(
+//                                decoration: TextDecoration.underline,
+//                                fontSize: em),
+//                          ),
+//                        ),
+//                      ],
+//                    ),
+//                  ),
+//                )
+//              ],
+//            ),
           ),
         );
 
